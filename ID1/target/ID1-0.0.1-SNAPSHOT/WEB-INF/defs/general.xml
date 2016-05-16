@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="common" template="/WEB-INF/layout/classic.jsp"	>
+    <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+  </definition>
+   <definition name="index" extends="common" >
+    <put-attribute name="title" value="Java_Blog-Aggregator" />
+    <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    <put-attribute name="current" value="index"></put-attribute>
+  </definition>
+  
+    
+   <definition name="users" extends="common" >
+    <put-attribute name="title" value="Users" />
+    <put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+    <put-attribute name="current" value="users"></put-attribute>
+  </definition> 
+   <definition name="user_detail" extends="common" >
+    <put-attribute name="title" value="User_detail" />
+    <put-attribute name="body" value="/WEB-INF/jsp/user_detail.jsp" />
+    <put-attribute name="current" value="users"></put-attribute>
+  </definition>
+  
+  <definition name="register" extends="common" >
+    <put-attribute name="title" value="User-Register" />
+    <put-attribute name="body" value="/WEB-INF/jsp/register.jsp" />
+    <put-attribute name="current" value="register"></put-attribute>
+  </definition>
+  <definition name="login" extends="common" >
+    <put-attribute name="title" value="Login" />
+    <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+    <put-attribute name="current" value="login"></put-attribute>
+  </definition>
+    <definition name="account" extends="common" >
+    <put-attribute name="title" value="account" />
+    <put-attribute name="body" value="/WEB-INF/jsp/user-account.jsp" />
+    <put-attribute name="current" value="login"></put-attribute>
+  </definition>
+</tiles-definitions>
